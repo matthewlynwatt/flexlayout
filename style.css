@@ -7,23 +7,21 @@
 html,
 body {
   font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 .header-section {
   background-color: rgb(83, 83, 83);
 }
+
 .header-section,
 .footer-section {
   width: 100%;
   height: 15vh;
-  text-align: center;
+  /* text-align: center; */
   font-size: 350%;
-  text-align: center;
   color: white;
-}
-
-.footer-section {
-  background-color: rgb(138, 138, 138);
 }
 
 .sidebar-section {
@@ -34,15 +32,6 @@ body {
   font-size: 350%;
 }
 
-h1 {
-  font-size: 350%;
-}
-
-.content {
-  max-width: 60%;
-  margin-left: 10em;
-}
-
 .article-section {
   color: black;
   background-color: white;
@@ -50,10 +39,21 @@ h1 {
   width: 80vw;
 }
 
+h1 {
+  font-size: 350%;
+  padding-bottom: 0.5em;
+}
+
+.content {
+  max-width: 60%;
+  padding: 2em 4em;
+}
+
 main {
   display: flex;
   flex-direction: row;
   width: 100%;
+  flex-grow: 1;
 }
 
 .sidebar-section,
@@ -64,4 +64,8 @@ main {
   justify-content: center;
   text-align: center;
   align-content: center;
+}
+
+.footer-section {
+  background-color: rgb(138, 138, 138);
 }
